@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Trường Học</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        section {
+            margin-bottom: 60px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #f1c40f;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 1.5em;
+            color: #3498db;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .club {
+            margin-bottom: 30px;
+        }
+        
+        .activities {
+            margin-left: 20px;
+        }
+        
+        .activities li {
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        /* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+footer h3 {
+    margin-bottom: 1rem;
+    color: #ecf0f1;
+}
+
+footer p, footer a {
+    color: #bdc3c7;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/304984093_752914602656814_9182661831165092949_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGBKVNnA05HtdFGuxqUv1PGN7zFwlCpgnE3vMXCUKmCcR5vAmzAXEZ5VJBTsaueFcs9mS85OpR4iAxSHyOEofKd&_nc_ohc=BKrGUkaSCC4Q7kNvgELCN2F&_nc_oc=AdmhDzWqNaZmOujrK-UsKg6SWH1-VxYmm1kB1jPO8obsVWRr6-QrxIoh4Lxz7MyQwCM&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=2c9DNPZXOoKt6fKlMP3zbA&oh=00_AYHBBlAq0MLwNgplH5IpDhMwWpGzHc0KnVRVhJ60QfCIJQ&oe=67EB22DE" alt="Logo trường" class="logo">
+            <h1>Trường THPT YALY</h1>
+            <p>Nơi ươm mầm tri thức - Chắp cánh ước mơ</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#clubs">Câu lạc bộ</a></li>
+            <li><a href="file:///C:/Users/TechCare/Documents/mad.html">CLB Văn hóa</a></li>
+            <li><a href="file:///C:/Users/TechCare/Documents/moi.html">CLB Thể thao</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="home">
+            <h2>Giới thiệu về trường</h2>
+            <p>Trường THPT YALY lập năm 1991 với sứ mệnh cung cấp nền giáo dục chất lượng cao, phát triển toàn diện cả về tri thức lẫn nhân cách cho học sinh.</p>
+            <p>Với đội ngũ giáo viên giàu kinh nghiệm, cơ sở vật chất hiện đại và môi trường học tập thân thiện, chúng tôi tự hào là một trong những trường THPT hàng đầu của thành phố.</p>
+            <p>Ngoài chương trình học chính khóa, nhà trường còn chú trọng phát triển các hoạt động ngoại khóa, câu lạc bộ để học sinh có cơ hội phát triển năng khiếu và kỹ năng mềm.</p>
+        </section>
+        
+        <section id="clubs">
+            <h2>Các Câu Lạc Bộ</h2>
+            <p>Trường THPT  có nhiều câu lạc bộ đa dạng để học sinh tham gia và phát triển bản thân. Dưới đây là hai câu lạc bộ nổi bật nhất:</p>
+            
+            <div class="club">
+                <h3 id="cultural-club">Câu Lạc Bộ Văn Hóa</h3>
+                <p>CLB Văn hóa là nơi quy tụ những học sinh yêu thích nghệ thuật, văn học và các hoạt động sáng tạo.</p>
+                <p>Các hoạt động nổi bật:</p>
+                <ul class="activities">
+                    <li><strong>Báo tường:</strong> Tổ chức hàng tháng với các chủ đề khác nhau, là cơ hội để học sinh thể hiện khả năng sáng tác, thiết kế.</li>
+                    <li><strong>Hội trại đêm:</strong> Sự kiện thường niên với các tiết mục văn nghệ đặc sắc, trò chơi dân gian và lửa trại.</li>
+                    <li><strong>Ngày hội văn hóa:</strong> Giới thiệu các nền văn hóa khác nhau qua ẩm thực, trang phục và biểu diễn nghệ thuật.</li>
+                </ul>
+                <a href="file:///C:/Users/TechCare/Documents/mad.html" class="btn">Tìm hiểu thêm</a>
+            </div>
+            
+            <div class="club">
+                <h3 id="sports-club">Câu Lạc Bộ Thể Thao</h3>
+                <p>CLB Thể thao khuyến khích lối sống lành mạnh, rèn luyện sức khỏe và tinh thần đồng đội.</p>
+                <p>Các hoạt động nổi bật:</p>
+                <ul class="activities">
+                    <li><strong>Giải bóng đá học đường:</strong> Tổ chức vào các ngày lễ lớn như 20/11, 26/3 với sự tham gia của các lớp.</li>
+                    <li><strong>Giải bóng chuyền:</strong> Diễn ra hàng tháng, thu hút nhiều học sinh tham gia và cổ vũ.</li>
+                    <li><strong>Ngày hội thể thao:</strong> Sự kiện thường niên với nhiều môn thi đấu đa dạng như điền kinh, kéo co, cầu lông.</li>
+                </ul>
+                <a href="file:///C:/Users/TechCare/Documents/moi.html" class="btn">Tìm hiểu thêm</a>
+            </div>
+            </section>
+    </div>
+    <!-- Cuối trang (Footer) -->
+    <footer>
+        <div class="contact">
+            <h3>Liên hệ:</h3>
+            <p>Địa chỉ: 96 Phạm Văn Đồng, thị trấn Yaly, Gia Lai</p>
+        <p>Điện thoại: (028) 1234 5678 </p>
+        <p>©  Bản quyền thuộc về Trường THPT YALY</p>
+           <a href="https://www.facebook.com/thptyalyconfession">ĐOÀN TRƯỜNG THPT YALY</a><br>
+        <p>©  Bản quyền thuộc về Nguyễn Thị Thúy Hồng 12A1</p>
+           <a href="https://www.facebook.com/nguyen.thi.thuy.hong.595212/">Nguyễn Thị Thúy Hồng 12A1</a><br>
+        <p>©  Bản quyền thuộc về Nguyễn Quỳnh Chi 12A1</p>
+           <a href="https://www.facebook.com/profile.php?id=100073301272327">Nguyễn Quỳnh Chi 12A1</a><br>
+        <p>©  Bản quyền thuộc về Nguyễn Hải Vi 12A1</p>
+           <a href="https://www.facebook.com/profile.php?id=100084303351050">Nguyễn Hải Vi 12A1</a><br>
+        <p>©  Bản quyền thuộc về Phan Minh Thư 12A1</p>
+           <a href="https://www.facebook.com/thu.phanminhthu.7">Phan Minh Thư 12A1</a><br>
+        </div>
+        
+        <div class="links">
+            <h3>Xem chi tiết:</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/thptyalyconfession">Trang web CLB Thể thao</a></li>
+                <li><a href="https://www.facebook.com/yalythpt">Trang web CLB Nghệ thuật</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+<style>
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+footer h3 {
+    margin-bottom: 1rem;
+    color: #ecf0f1;
+}
+
+footer p, footer a {
+    color: #bdc3c7;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Bố cục nội dung chính mới */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.content-text, .content-image {
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
+}
+
+.content-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.content-text h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.content-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
